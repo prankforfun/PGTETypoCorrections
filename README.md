@@ -66,7 +66,7 @@ One major security issue is XSS attacks. For example, what if someone writes
     
 A naive implementation of "typo fixing" would cause this to execute the (potentially malicious) code, which is clearly very dangerous. I have been careful to only change the contents of text nodes and only set text (rather than raw HTML) in the script, so it should be entirely resistant to these kinds of attacks. Still, you can never be too sure, so use at your own risk.
 
-Another issue is the issue of spam. What if some comments
+Another issue is the issue of spam. What if someone comments
 
     "I'm going to get blamed for this, aren't I?" Catherine said. -> Butts lol lol
     
