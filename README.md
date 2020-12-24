@@ -1,7 +1,7 @@
 # Typo Extension for Practical Guide to Evil
 
 ## Installation
-Copy and paste the javascript file into something like Tampermonkey or Greasemonkey. It will execute on the page https://practicalguidetoevil.wordpress.com/. Note: you should never blindly trust an external script, since in theory, it could take your data and cause all sorts of security issues. Of course, this script is not doing that, but in general, be wary. 
+Copy and paste the javascript file into Tampermonkey (Chrome), Greasemonkey (Firefox), or their equivalents in other browsers. Alternatively, you should be able to press "Install from URL," and submit https://raw.githubusercontent.com/prankforfun/PGTETypoCorrections/main/pgte-typos.js as the url, which will also cause it to update automatically. It will execute on the page https://practicalguidetoevil.wordpress.com/. Note: you should never blindly trust an external script, since in theory, it could take your data and cause all sorts of security issues. Of course, this script is not doing that, but in general, be wary. This script has so far only been tested on Google Chrome, but it should work on other modern browsers (possibly with minor changes).
 
 ## What does it do
 
