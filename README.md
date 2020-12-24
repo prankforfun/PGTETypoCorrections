@@ -45,6 +45,16 @@ Furthermore, spacing around the typos is trimmed, so this is equivalent to
 
 In general, err on the side of preserving the original text; it is better to not fix a typo than to fix it incorrectly, in my opinion.
 
+Make sure that you format your typo correction in such a way that it can't be applied twice. If a particular context is found zero or multiple times, a warning is logged to the console but the line is skipped. However, if you have the piece of text "I don't know what happen." and fix it with
+
+    {I don't know what happen} happen -> happened
+    
+Then, if someone else fixes the typo before you submit the comment, or if EE later fixes the comment in the chapter itself, this will actually create a typo (the sentence will read "I don't know what happeneded"). Therefore, use instead
+
+    {I don't know what happen.} hapen -> happened
+    
+The key difference is that the presence of the period makes it so that if the typo is already fixed, the context simply won't be found, and the line will be skipped.
+
 The program only searches through text nodes of the same formatting so that it doesn't lose any formatting. For example, suppose the original sentence was "I couldn't believe Archer was better than me at *abstract mathmatics* of all things," the following correction *wouldn't* work:
 
     {at abstract mathmatics} mathmatics -> mathematics
