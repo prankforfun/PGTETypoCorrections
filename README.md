@@ -1,7 +1,10 @@
 # Typo Extension for Practical Guide to Evil
 
 ## Installation
-Copy and paste the javascript file into Tampermonkey (Chrome), Greasemonkey (Firefox), or their equivalents in other browsers. Alternatively, you should be able to press "Install from URL" in these extensions, and submit https://raw.githubusercontent.com/prankforfun/PGTETypoCorrections/main/pgte-typos.js as the url, which will also cause it to update automatically. It will execute on the page https://practicalguidetoevil.wordpress.com/. Note: you should never blindly trust an external script, since in theory, it could take your data and cause all sorts of security issues. Of course, this script is not doing that, but in general, be wary. This script has so far only been tested on Google Chrome, but it should work on other modern browsers (possibly with minor changes).
+  - Install the Tampermonkey extension at https://www.tampermonkey.net/ for your browser. You can also use other extensions such as Greasemonkey if you wish.
+  - You should see a little Tampermonkey extension icon in the corner of your browser window, where all the extensions are. Click on it, and open the Tampermonkey dashboard.
+  - Click "utilities" and focus on enter the following URL in the "install from URL" field: https://raw.githubusercontent.com/prankforfun/PGTETypoCorrections/main/pgte-typos.js
+  - Click install. You should be done! Navitage to https://practicalguidetoevil.wordpress.com/, and click on a chapter to try it out.
 
 To try it out once without installing, just copy the contents of the javascript file to the clipboard; then, go to any PGTE chapter page, press ctrl+shift+j (or other key combination such as F12) to open the javascript console, and paste the script into the console and hit enter. Then, you need to trigger a load event for the fixes to take place, so type `dispatchEvent(new Event('load'));` and hit enter. This should print some things to the console, and fix the typos on the page.
 
