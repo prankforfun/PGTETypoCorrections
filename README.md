@@ -3,7 +3,7 @@
 ## Installation
   - Install the Tampermonkey extension at https://www.tampermonkey.net/ for your browser. You can also use other extensions such as Greasemonkey if you wish.
   - You should see a little Tampermonkey extension icon in the corner of your browser window, where all the extensions are. Click on it, and open the Tampermonkey dashboard.
-  - Click "utilities" and focus on enter the following URL in the "install from URL" field: https://raw.githubusercontent.com/prankforfun/PGTETypoCorrections/main/pgte-typos.js
+  - Click "utilities" and enter the following URL in the "install from URL" field: https://raw.githubusercontent.com/prankforfun/PGTETypoCorrections/main/pgte-typos.js
   - Click install. You should be done! Navitage to https://practicalguidetoevil.wordpress.com/, and click on a chapter to try it out.
 
 To try it out once without installing, just copy the contents of the javascript file to the clipboard; then, go to any PGTE chapter page, press ctrl+shift+j (or other key combination such as F12) to open the javascript console, and paste the script into the console and hit enter. Then, you need to trigger a load event for the fixes to take place, so type `dispatchEvent(new Event('load'));` and hit enter. This should print some things to the console, and fix the typos on the page.
